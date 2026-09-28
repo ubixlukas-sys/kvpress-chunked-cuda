@@ -6,6 +6,8 @@ A reproducible inference-optimization case study built on [NVIDIA KVPress](https
 
 This is an experimental implementation and evidence repository. It is not an upstream KVPress release or an accepted upstream contribution. Development and submission preparation used AI coding agents.
 
+Upstream design discussion: [NVIDIA/kvpress#293](https://github.com/NVIDIA/kvpress/issues/293). The feature request has been submitted; no upstream code PR has been merged.
+
 ## Results
 
 Qwen3-8B, bf16, batch 1; chunk size B=256, KV budget K=1024, four sink tokens, replace scoring; Windows, RTX 3090 24 GB, PyTorch 2.9.1+cu126, Transformers 5.2.0. Both arms use the same forced repeat-KV SDPA path.

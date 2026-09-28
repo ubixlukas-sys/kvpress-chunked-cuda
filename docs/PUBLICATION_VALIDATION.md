@@ -13,4 +13,6 @@ Date: 2026-09-28. This records checks performed while preparing the public repos
 | New documentation whitespace | Passed |
 | Common credential-pattern scan | No matching GitHub/Hugging Face token or private-key header patterns in the selected public files |
 
-The original Windows line endings and raw log whitespace are preserved to keep source hashes intact. This check record does not claim new GPU validation, a fresh dependency installation, or GitHub-hosted CI execution. The automated workflow performs CPU-only evidence auditing; historical GPU results remain scoped to the recorded experiment environment.
+The original Windows line endings and raw log whitespace are preserved to keep source hashes intact. This check record does not claim new GPU validation or a fresh dependency installation. The automated workflow performs CPU-only evidence auditing; historical GPU results remain scoped to the recorded experiment environment.
+
+The initial published code snapshot `1b2a9313ac0cd6220912bb6d54e261d7fbd97d05` passed [GitHub Actions run 36403169619](https://github.com/ubixlukas-sys/kvpress-chunked-cuda/actions/runs/36403169619). The upstream feature request is [NVIDIA/kvpress#293](https://github.com/NVIDIA/kvpress/issues/293); it is a design proposal, not an accepted code contribution.
