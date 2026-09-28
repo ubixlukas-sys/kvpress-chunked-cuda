@@ -1,0 +1,164 @@
+{
+  "n_rows": 650,
+  "identical_prediction_texts": 633,
+  "changed_prediction_texts": 17,
+  "identical_per_sample_scores": 650,
+  "worse_sample_scores": 0,
+  "better_sample_scores": 0,
+  "mean_reference": 36.39,
+  "mean_fused": 36.39,
+  "per_task": {
+    "cwe": {
+      "n": 50,
+      "text_changes": 0,
+      "score_changes": 0,
+      "reference_metric": 87.6,
+      "fused_metric": 87.6
+    },
+    "fwe": {
+      "n": 50,
+      "text_changes": 0,
+      "score_changes": 0,
+      "reference_metric": 95.33,
+      "fused_metric": 95.33
+    },
+    "niah_multikey_1": {
+      "n": 50,
+      "text_changes": 0,
+      "score_changes": 0,
+      "reference_metric": 22.0,
+      "fused_metric": 22.0
+    },
+    "niah_multikey_2": {
+      "n": 50,
+      "text_changes": 0,
+      "score_changes": 0,
+      "reference_metric": 18.0,
+      "fused_metric": 18.0
+    },
+    "niah_multikey_3": {
+      "n": 50,
+      "text_changes": 1,
+      "score_changes": 0,
+      "reference_metric": 2.0,
+      "fused_metric": 2.0
+    },
+    "niah_multiquery": {
+      "n": 50,
+      "text_changes": 7,
+      "score_changes": 0,
+      "reference_metric": 22.0,
+      "fused_metric": 22.0
+    },
+    "niah_multivalue": {
+      "n": 50,
+      "text_changes": 5,
+      "score_changes": 0,
+      "reference_metric": 15.0,
+      "fused_metric": 15.0
+    },
+    "niah_single_1": {
+      "n": 50,
+      "text_changes": 2,
+      "score_changes": 0,
+      "reference_metric": 14.0,
+      "fused_metric": 14.0
+    },
+    "niah_single_2": {
+      "n": 50,
+      "text_changes": 0,
+      "score_changes": 0,
+      "reference_metric": 34.0,
+      "fused_metric": 34.0
+    },
+    "niah_single_3": {
+      "n": 50,
+      "text_changes": 2,
+      "score_changes": 0,
+      "reference_metric": 8.0,
+      "fused_metric": 8.0
+    },
+    "qa_1": {
+      "n": 50,
+      "text_changes": 0,
+      "score_changes": 0,
+      "reference_metric": 84.0,
+      "fused_metric": 84.0
+    },
+    "qa_2": {
+      "n": 50,
+      "text_changes": 0,
+      "score_changes": 0,
+      "reference_metric": 56.0,
+      "fused_metric": 56.0
+    },
+    "vt": {
+      "n": 50,
+      "text_changes": 0,
+      "score_changes": 0,
+      "reference_metric": 15.2,
+      "fused_metric": 15.2
+    }
+  },
+  "timing": [
+    {
+      "length": 8192,
+      "reps_per_arm": 4,
+      "reference_median_ms": 5235.9,
+      "fused_median_ms": 4988.9,
+      "reduction_percent": 4.72,
+      "fused_faster_pairs": 3,
+      "recorded_order": [
+        "ref",
+        "fused",
+        "ref",
+        "fused",
+        "ref",
+        "fused",
+        "ref",
+        "fused"
+      ]
+    },
+    {
+      "length": 16384,
+      "reps_per_arm": 4,
+      "reference_median_ms": 10575.7,
+      "fused_median_ms": 10097.8,
+      "reduction_percent": 4.52,
+      "fused_faster_pairs": 3,
+      "recorded_order": [
+        "ref",
+        "fused",
+        "ref",
+        "fused",
+        "ref",
+        "fused",
+        "ref",
+        "fused"
+      ]
+    },
+    {
+      "length": 32768,
+      "reps_per_arm": 4,
+      "reference_median_ms": 21702.0,
+      "fused_median_ms": 20407.6,
+      "reduction_percent": 5.96,
+      "fused_faster_pairs": 4,
+      "recorded_order": [
+        "ref",
+        "fused",
+        "ref",
+        "fused",
+        "ref",
+        "fused",
+        "ref",
+        "fused"
+      ]
+    }
+  ],
+  "scorer_source": "https://raw.githubusercontent.com/NVIDIA/kvpress/a13a1da/evaluation/benchmarks/ruler/calculate_metrics.py",
+  "source_csv_sha256": {
+    "reference": "52d19c62b7f996926964aaf86c61311c3ad225c202a4007e871903643f3ee631",
+    "fused": "a89b5735b91d96e896ba542242bb1525bef5e96ccd80a3a682a458fbf75b9910"
+  }
+}

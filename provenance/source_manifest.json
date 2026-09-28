@@ -1,0 +1,207 @@
+{
+  "source_package": "KVPress_Final_Submission_Package.zip",
+  "source_package_sha256": "8e0533b0893c5d9eb8a3d48395ac794e2762dbd90fc949ff870890e5754b63a2",
+  "code_policy": "All copied Python files are byte-identical to the submitted package. Numerical kernels are unchanged.",
+  "files": [
+    {
+      "source": "code/presses/chunked_online_press.py",
+      "destination": "presses/chunked_online_press.py",
+      "sha256": "8cd14ed4a5969d0a233733c586abd09da69ae9f6b58460af7660c1763295d408"
+    },
+    {
+      "source": "code/presses/fused_scoring.py",
+      "destination": "presses/fused_scoring.py",
+      "sha256": "7739b54e20b9f5cf3a11ae8f281e07821a90120151bece7057dece080530a5ab"
+    },
+    {
+      "source": "code/presses/nvrtc_runner.py",
+      "destination": "presses/nvrtc_runner.py",
+      "sha256": "d87c3f99214714a3050d0c9ccae73bd8b55aa087a206e2408b6ef6db05ec68e5"
+    },
+    {
+      "source": "code/presses/__init__.py",
+      "destination": "presses/__init__.py",
+      "sha256": "6a9c07e9b584e747848b95acb2d2e4e4461fb7c2d39433aeb297e117ac36f8ab"
+    },
+    {
+      "source": "code/tools/audit_existing_predictions.py",
+      "destination": "tools/audit_existing_predictions.py",
+      "sha256": "6376f82b52ac589eb8909dd8ca1ecd02c72315468d5df0673009b3e6d730f6e5"
+    },
+    {
+      "source": "code/tools/validate_chunked.py",
+      "destination": "tools/validate_chunked.py",
+      "sha256": "e6fc44ece85ffe1a3a2a1103075dcbf02f5764dbf3a980eed452ba9fc3a919be"
+    },
+    {
+      "source": "code/tools/test_scoring_reference.py",
+      "destination": "tools/test_scoring_reference.py",
+      "sha256": "7972784fedbef10316a438615199b84bd80979dab1cbfe1afc9f9a0cce93322f"
+    },
+    {
+      "source": "code/tools/test_mask_probe.py",
+      "destination": "tools/test_mask_probe.py",
+      "sha256": "5a0529ecbe509779108aab92c583131c13703e6ce91319a21dc62da558df5e49"
+    },
+    {
+      "source": "code/tools/test_fused_scoring.py",
+      "destination": "tools/test_fused_scoring.py",
+      "sha256": "3ca87f31f6ec3cffaf736ab579f1af076963c11036519b1d417d166344d43736"
+    },
+    {
+      "source": "code/tools/test_edges.py",
+      "destination": "tools/test_edges.py",
+      "sha256": "a8eb36f5fbbb997de338c9dfd6c21ecf2f1ef30a736b8f05d226f4a1bfcf7ba0"
+    },
+    {
+      "source": "code/tools/test_select_unit.py",
+      "destination": "tools/test_select_unit.py",
+      "sha256": "8e1b27b586b7449c7124a041ebd54c0be721585ae5bf34211d05de354cfdf868"
+    },
+    {
+      "source": "code/tools/test_needle_retention.py",
+      "destination": "tools/test_needle_retention.py",
+      "sha256": "1cdfee55332c39824427f1808cd19033d12d33e9662cc3f495340c3a508e9c17"
+    },
+    {
+      "source": "code/tools/test_review_regressions.py",
+      "destination": "tools/test_review_regressions.py",
+      "sha256": "e885b41ab3446dbcf639a9e22c4f898712c7e7ce44a1b124940a1cf84ce779a7"
+    },
+    {
+      "source": "code/tools/perf_fused_alt.py",
+      "destination": "tools/perf_fused_alt.py",
+      "sha256": "cbd3001a48a2e6ae87d4cdf437f1254f244dc1aa7144caef2ba7707ffe1baa45"
+    },
+    {
+      "source": "code/tools/profile_hotspots.py",
+      "destination": "tools/profile_hotspots.py",
+      "sha256": "c3429bd4f2c33c0c6d6790d975ba12fc2cfb5f69ff50de31b5e03de6fb9283ab"
+    },
+    {
+      "source": "code/tools/run_one_eval.py",
+      "destination": "tools/run_one_eval.py",
+      "sha256": "8149fd23c733ab43464b553fe3ae3b9def6b11ccba3c71bb3331af07ffb7056e"
+    },
+    {
+      "source": "data/correctness/mask_probe_fused.log",
+      "destination": "data/correctness/mask_probe_fused.log",
+      "sha256": "2a29050a913902ecc53eb8312ee881e6929e3511e279490b577c354663fca902"
+    },
+    {
+      "source": "data/correctness/scoring_ref_fused.log",
+      "destination": "data/correctness/scoring_ref_fused.log",
+      "sha256": "df4a089fd09db9a7828d0535e66ea44bd91add3cbb0d2007e32e55039b6af460"
+    },
+    {
+      "source": "data/correctness/validate_fused.log",
+      "destination": "data/correctness/validate_fused.log",
+      "sha256": "740e1a0713283b0d22ef8ae07b5226afdc5a8dfb083fef42b4f6b62f3f7dbc63"
+    },
+    {
+      "source": "data/fused_dev/config.yaml",
+      "destination": "data/fused_dev/config.yaml",
+      "sha256": "609c3cbc3030d7965a3f0b46e39f5ad1d277c8b69b468e164d830091f5f1af13"
+    },
+    {
+      "source": "data/fused_dev/dev_ids.json",
+      "destination": "data/fused_dev/dev_ids.json",
+      "sha256": "d3919c7a13b3da78149c73cc29f890bfe8bfdf8ab5d676fc1e51911ef302b269"
+    },
+    {
+      "source": "data/fused_dev/metrics.json",
+      "destination": "data/fused_dev/metrics.json",
+      "sha256": "f015820b82f531a920565791c5c96c1002a6496ef1da5966fd49da65c4abb889"
+    },
+    {
+      "source": "data/fused_dev/predictions.csv",
+      "destination": "data/fused_dev/predictions.csv",
+      "sha256": "a89b5735b91d96e896ba542242bb1525bef5e96ccd80a3a682a458fbf75b9910"
+    },
+    {
+      "source": "data/fused_dev/run_meta.json",
+      "destination": "data/fused_dev/run_meta.json",
+      "sha256": "0729600a9ea229c26a899b2f47b659a208630fbbfbbdc7b6cc80eb8bbeccdca7"
+    },
+    {
+      "source": "data/historical_method/dev_accuracy_summary.json",
+      "destination": "data/historical_method/dev_accuracy_summary.json",
+      "sha256": "889e5879d8aeebbb779e924fa1c892e954cab2ca91d023d7dfc233fae4b619b3"
+    },
+    {
+      "source": "data/historical_method/dev_comparison.csv",
+      "destination": "data/historical_method/dev_comparison.csv",
+      "sha256": "1c76e9c90a817a01dd18d814ad4f4bb392a7631ee1e929241f816b5ba01a7e5c"
+    },
+    {
+      "source": "data/historical_method/no_press_metrics.json",
+      "destination": "data/historical_method/no_press_metrics.json",
+      "sha256": "e30faa5d0b614ded82b86381439763fa020eac17382b376b415cd96b42ead036"
+    },
+    {
+      "source": "data/performance/perf_fused_alt.json",
+      "destination": "data/performance/perf_fused_alt.json",
+      "sha256": "06f653ee963cf35f0390b31c2d21617ce7c5ac64e4693afd88b895eae6eaa16d"
+    },
+    {
+      "source": "data/performance/perf_fused_alt.log",
+      "destination": "data/performance/perf_fused_alt.log",
+      "sha256": "1ca28008af395e46bdeacec789458a0d02e2199de8b25b24605a56260a3248c7"
+    },
+    {
+      "source": "data/performance/profile_chunked_8k_frozen_table.txt",
+      "destination": "data/performance/profile_chunked_8k_frozen_table.txt",
+      "sha256": "4cec9895f127cf61b3c7bb10959dce3548489b7eb7198502730b9ffcea97a6e9"
+    },
+    {
+      "source": "data/performance/profile_chunked_8k_frozen_top.json",
+      "destination": "data/performance/profile_chunked_8k_frozen_top.json",
+      "sha256": "01eba9014fa32c21c20de4deda5738b2f509f9b90c957ddfb22cf486d2de95cc"
+    },
+    {
+      "source": "data/performance/profile_chunked_8k_fused_table.txt",
+      "destination": "data/performance/profile_chunked_8k_fused_table.txt",
+      "sha256": "e19bd643af78a9c5e5dd3524f6b2d7013f6d37414d4bf918e6673db38bde4a51"
+    },
+    {
+      "source": "data/performance/profile_chunked_8k_fused_top.json",
+      "destination": "data/performance/profile_chunked_8k_fused_top.json",
+      "sha256": "c5e866dac3298c4ccf6470aea7bf4a00dbe8996a728a667e3a48fbfe6f2ac1b9"
+    },
+    {
+      "source": "data/performance/test_fused_scoring.log",
+      "destination": "data/performance/test_fused_scoring.log",
+      "sha256": "f650cd3608e1b2894b2badccc3f44598ab280635bde45fc7671eabadbea3d576"
+    },
+    {
+      "source": "data/reference_dev/config.yaml",
+      "destination": "data/reference_dev/config.yaml",
+      "sha256": "f3876642e09b11650d39a2152dd2c71f8af455ca2fca83e39abc5f01d0ba8488"
+    },
+    {
+      "source": "data/reference_dev/dev_ids.json",
+      "destination": "data/reference_dev/dev_ids.json",
+      "sha256": "d3919c7a13b3da78149c73cc29f890bfe8bfdf8ab5d676fc1e51911ef302b269"
+    },
+    {
+      "source": "data/reference_dev/metrics.json",
+      "destination": "data/reference_dev/metrics.json",
+      "sha256": "f015820b82f531a920565791c5c96c1002a6496ef1da5966fd49da65c4abb889"
+    },
+    {
+      "source": "data/reference_dev/predictions.csv",
+      "destination": "data/reference_dev/predictions.csv",
+      "sha256": "52d19c62b7f996926964aaf86c61311c3ad225c202a4007e871903643f3ee631"
+    },
+    {
+      "source": "data/reference_dev/run_meta.json",
+      "destination": "data/reference_dev/run_meta.json",
+      "sha256": "41a4d49be25854ad41c117d410f05d6fb53c6f165c0ed408508ced401ffd351d"
+    },
+    {
+      "source": "source/frozen/chunked_online_press.py",
+      "destination": "source/frozen/chunked_online_press.py",
+      "sha256": "a29b57263f6749785ace197d7992ed6538e890f2cf8382f972758e733a46d041"
+    }
+  ]
+}

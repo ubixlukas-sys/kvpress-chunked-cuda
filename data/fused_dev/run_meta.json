@@ -1,0 +1,18 @@
+{
+  "tag": "dev50_fused",
+  "press_name": "chunked_replace_k1024_fused",
+  "compression_ratio": 0.0,
+  "query_aware": false,
+  "fraction": 0.05,
+  "model": "D:\\mxy\\llm\\kvpress_project\\models\\Qwen3-8B",
+  "seed": 42,
+  "dtype": "bfloat16",
+  "attn_implementation": "sdpa (use_gqa_in_sdpa forced False -> repeat_kv path)",
+  "PYTORCH_CUDA_ALLOC_CONF": "expandable_segments:True",
+  "dataset": "simonjegou/ruler data_dir=4096",
+  "wall_seconds_incl_model_load": 4076.7,
+  "run_peak_vram_alloc_GiB": 15.513,
+  "run_peak_vram_reserved_GiB": 15.723,
+  "mean_string_match": 36.39,
+  "run_dir": "D:\\mxy\\llm4\\results_cudaop/dev\\ruler__4096__Qwen3-8B__chunked_replace_k1024_fused__0.00__fraction0.050"
+}

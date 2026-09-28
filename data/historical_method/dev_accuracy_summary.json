@@ -1,0 +1,76 @@
+{
+ "n_rows_per_task": 50,
+ "n_tasks": 13,
+ "means": {
+  "no_press": 77.25,
+  "A-replace online": 36.39,
+  "matched oracle": 34.59
+ },
+ "per_task": {
+  "cwe": {
+   "no_press": 77.28,
+   "online": 87.6,
+   "oracle": 87.0
+  },
+  "fwe": {
+   "no_press": 69.64,
+   "online": 95.33,
+   "oracle": 94.67
+  },
+  "niah_multikey_1": {
+   "no_press": 63.64,
+   "online": 22.0,
+   "oracle": 16.0
+  },
+  "niah_multikey_2": {
+   "no_press": 63.64,
+   "online": 18.0,
+   "oracle": 8.0
+  },
+  "niah_multikey_3": {
+   "no_press": 90.0,
+   "online": 2.0,
+   "oracle": 2.0
+  },
+  "niah_multiquery": {
+   "no_press": 76.39,
+   "online": 22.0,
+   "oracle": 17.0
+  },
+  "niah_multivalue": {
+   "no_press": 75.61,
+   "online": 15.0,
+   "oracle": 13.0
+  },
+  "niah_single_1": {
+   "no_press": 63.64,
+   "online": 14.0,
+   "oracle": 14.0
+  },
+  "niah_single_2": {
+   "no_press": 63.64,
+   "online": 34.0,
+   "oracle": 36.0
+  },
+  "niah_single_3": {
+   "no_press": 90.0,
+   "online": 8.0,
+   "oracle": 8.0
+  },
+  "qa_1": {
+   "no_press": 100.0,
+   "online": 84.0,
+   "oracle": 84.0
+  },
+  "qa_2": {
+   "no_press": 100.0,
+   "online": 56.0,
+   "oracle": 56.0
+  },
+  "vt": {
+   "no_press": 70.73,
+   "online": 15.2,
+   "oracle": 14.0
+  }
+ }
+}

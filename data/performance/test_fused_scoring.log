@@ -1,0 +1,31 @@
+fused source : D:\mxy\llm4\presses\fused_scoring.py
+sha256       : 7739b54e20b9f5cf3a11ae8f281e07821a90120151bece7057dece080530a5ab
+torch        : 2.9.1+cu126 | device: NVIDIA GeForce RTX 3090
+kernel column cap: T <= 2048
+[PASS] C.T256.kept0 max_abs=2.794e-09
+[PASS] C.T512.kept256 max_abs=6.985e-10
+[PASS] C.T768.kept512 max_abs=4.657e-10
+[PASS] C.T1024.kept768 max_abs=2.328e-10
+[PASS] C.T1280.kept1024 max_abs=2.328e-10
+[PASS] C.T2048.kept1792 max_abs=1.164e-10
+[PASS] C.contract_raise T > kept+B rejected
+[PASS] C.adv_const max_abs=1.164e-10
+[PASS] C.adv_extreme max_abs=9.313e-10
+[PASS] C.adv_uniform max_abs=2.328e-10
+[PASS] C.deterministic 
+[PASS] C.fallback_flag 
+[PASS] C.nofallback_normal 
+
+paired microbenchmark (median of 50, us) — the replaced segment only:
+(press-invariant configuration: kept = T - B, i.e. candidates = survivors + block)
+     T   kept        ref      fused  speedup
+   512    256      428.5      202.7    2.11x
+   768    512      415.7      203.8    2.04x
+  1024    768      481.3      226.3    2.13x
+  1280   1024      550.4      241.7    2.28x
+  2048   1792      758.7      308.2    2.46x
+  1280   1024      547.8      241.7    2.27x
+  1056    800      485.4      220.2    2.20x
+with einsum (d=128, T=1280): ref 749.1us vs fused 556.0us -> 1.35x
+
+ALL FUSED-SCORING CHECKS PASSED

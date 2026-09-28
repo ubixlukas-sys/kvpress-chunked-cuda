@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+.venv/
+env/
+kvpress/
+cache/
+models/
+evidence*/
+results*/
+verified/local/
+*.cubin
+*.ptx
+*.safetensors
+*.zip
+.env

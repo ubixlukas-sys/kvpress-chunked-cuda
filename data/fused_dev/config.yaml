@@ -1,0 +1,25 @@
+dataset: ruler
+data_dir: '4096'
+model: D:\mxy\llm\kvpress_project\models\Qwen3-8B
+device: cuda:0
+press_name: chunked_replace_k1024_fused
+compression_ratio: 0.0
+key_channel_compression_ratio: null
+fraction: 0.05
+max_new_tokens: null
+max_context_length: null
+query_aware: false
+needle_depth: null
+compression_interval: null
+target_size: null
+hidden_states_buffer_size: null
+output_dir: results_cudaop/dev
+log_level: INFO
+model_kwargs:
+  dtype: bfloat16
+trust_remote_code: false
+press_init_command: ChunkedOnlinePress(compression_ratio=0.0, budget=1024, block_length=256,
+  n_sink=4, mode='replace', gamma=0.9, oracle_feedback=False, strict_checks=True,
+  fused_scoring=True)
+seed: 42
+fp8: false

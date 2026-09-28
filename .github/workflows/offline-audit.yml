@@ -1,0 +1,18 @@
+name: Audit saved experimental results
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Recompute sample scores and timing medians
+        run: python tools/audit_existing_predictions.py --reference data/reference_dev --fused data/fused_dev --perf data/performance/perf_fused_alt.json --out verified/local
+      - name: Compare the recorded and recomputed audit
+        run: python -c "import json; from pathlib import Path; assert json.loads(Path('verified/verified_summary.json').read_text()) == json.loads(Path('verified/local/verified_summary.json').read_text())"
+      - name: Check Python syntax without importing GPU dependencies
+        run: python -m compileall -q presses tools
